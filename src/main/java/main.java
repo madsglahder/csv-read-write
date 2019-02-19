@@ -21,5 +21,9 @@ public class main {
         WriteCSVOriginal writeCSVOriginal = new WriteCSVOriginal();
         writeCSVOriginal.write(csvPeople, "generated_original.csv");
 
+        //write something altered
+        //should be fun
+        WriteCSVAltered writeCSVAltered = new WriteCSVAltered();
+        writeCSVAltered.writeAltered(csvPeople, "generated_altered.csv");
     }
 }
