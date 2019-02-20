@@ -1,8 +1,12 @@
-public class main {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class APIApplication {
 
     public static void main(String[] args) {
 
-
+        SpringApplication.run(APIApplication.class, args);
 
         //All of the below needs to be moved to a rest call where befitting
         //Where that is exactly will become clear in a future commit

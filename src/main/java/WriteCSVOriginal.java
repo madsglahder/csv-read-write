@@ -14,7 +14,7 @@ public class WriteCSVOriginal {
             CsvDataTypeMismatchException,
             CsvRequiredFieldEmptyException {
 
-        Writer writer = new FileWriter(Paths.get("src/main/resources/" + fileName).toString());
+        Writer writer = new FileWriter(Paths.get("src/APIApplication/resources/" + fileName).toString());
 
         StatefulBeanToCsvBuilder<CSVPerson> builder = new StatefulBeanToCsvBuilder<>(writer);
         StatefulBeanToCsv<CSVPerson> beanWriter = builder.build();

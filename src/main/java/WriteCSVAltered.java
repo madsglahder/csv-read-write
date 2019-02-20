@@ -17,7 +17,7 @@ public class WriteCSVAltered {
 
         List<CSVPersonAltered> alteredPeople = alterPeople(csvPeople);
 
-        Writer writer = new FileWriter(Paths.get("src/main/resources/" + fileName).toString());
+        Writer writer = new FileWriter(Paths.get("src/APIApplication/resources/" + fileName).toString());
 
         StatefulBeanToCsvBuilder<CSVPersonAltered> builder = new StatefulBeanToCsvBuilder<>(writer);
         StatefulBeanToCsv<CSVPersonAltered> beanWriter = builder.build();
