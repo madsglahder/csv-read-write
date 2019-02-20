@@ -1,11 +1,6 @@
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-
-import java.io.IOException;
-
 public class main {
 
-    public static void main(String[] args) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    public static void main(String[] args) {
 
 
 
