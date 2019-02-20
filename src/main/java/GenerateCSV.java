@@ -6,6 +6,13 @@ import java.io.IOException;
 
 public class GenerateCSV {
     public void generate(int lines, String filename) {
+
+        //Usage for generating excellent CSVs
+        /* generate csv
+        GenerateCSV generateCSV = new GenerateCSV();
+        generateCSV.generate(5, "generated.csv");
+        */
+
         try {
             FileWriter writer = new FileWriter("src/main/resources/" + filename);
             CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader(
