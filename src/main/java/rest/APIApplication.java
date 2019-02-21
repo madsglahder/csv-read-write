@@ -1,3 +1,5 @@
+package rest;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,17 +14,17 @@ public class APIApplication {
         //Where that is exactly will become clear in a future commit
         /*
         //load bean into memory
-        CSV csv = new CSV();
-        List<CSVPerson> csvPeople = csv.load("generated.csv");
+        csv.CSV csv = new csv.CSV();
+        List<csv.CSVPerson> csvPeople = csv.load("generated.csv");
 
         //write said bean
         //this took way longer than anticipated
-        WriteCSVOriginal writeCSVOriginal = new WriteCSVOriginal();
+        csv.WriteCSVOriginal writeCSVOriginal = new csv.WriteCSVOriginal();
         writeCSVOriginal.write(csvPeople, "generated_original.csv");
 
         //write something altered
         //should be fun
-        WriteCSVAltered writeCSVAltered = new WriteCSVAltered();
+        csv.WriteCSVAltered writeCSVAltered = new csv.WriteCSVAltered();
         writeCSVAltered.writeAltered(csvPeople, "generated_altered.csv");
         */
     }

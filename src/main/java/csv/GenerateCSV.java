@@ -1,3 +1,5 @@
+package csv;
+
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
@@ -9,12 +11,12 @@ public class GenerateCSV {
 
         //Usage for generating excellent CSVs
         /* generate csv
-        GenerateCSV generateCSV = new GenerateCSV();
+        csv.GenerateCSV generateCSV = new csv.GenerateCSV();
         generateCSV.generate(5, "generated.csv");
         */
 
         try {
-            FileWriter writer = new FileWriter("src/APIApplication/resources/" + filename);
+            FileWriter writer = new FileWriter("src/rest.APIApplication/resources/" + filename);
             CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader(
                     "id",
                     "firstName",

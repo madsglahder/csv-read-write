@@ -1,3 +1,5 @@
+package csv;
+
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -17,7 +19,7 @@ public class WriteCSVAltered {
 
         List<CSVPersonAltered> alteredPeople = alterPeople(csvPeople);
 
-        Writer writer = new FileWriter(Paths.get("src/APIApplication/resources/" + fileName).toString());
+        Writer writer = new FileWriter(Paths.get("src/rest.APIApplication/resources/" + fileName).toString());
 
         StatefulBeanToCsvBuilder<CSVPersonAltered> builder = new StatefulBeanToCsvBuilder<>(writer);
         StatefulBeanToCsv<CSVPersonAltered> beanWriter = builder.build();

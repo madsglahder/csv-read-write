@@ -1,3 +1,5 @@
+package csv;
+
 import com.opencsv.bean.CsvBindByName;
 
 public class CSVPerson {
