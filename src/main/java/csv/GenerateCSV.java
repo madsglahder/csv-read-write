@@ -16,7 +16,7 @@ public class GenerateCSV {
         */
 
         try {
-            FileWriter writer = new FileWriter("src/rest.APIApplication/resources/" + filename);
+            FileWriter writer = new FileWriter("src/main/resources/" + filename);
             CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader(
                     "id",
                     "firstName",

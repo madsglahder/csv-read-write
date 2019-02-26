@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CSV {
     public List<CSVPerson> load(String fileName) throws IOException {
-        Reader reader = Files.newBufferedReader(Paths.get("src/rest.APIApplication/resources/" + fileName));
+        Reader reader = Files.newBufferedReader(Paths.get("src/application.APIApplication/resources/" + fileName));
         CsvToBean csvBean = new CsvToBeanBuilder(reader)
                 .withType(CSVPerson.class)
                 .withIgnoreLeadingWhiteSpace(true)
