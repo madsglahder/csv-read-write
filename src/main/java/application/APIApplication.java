@@ -1,24 +1,17 @@
 package application;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.context.annotation.Bean;
-import rest.StorageService;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.ws.rs.core.Application;
-
+@SpringBootApplication
 public class APIApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(Application.class, args);
+        //Onwards, to *checks notes* ... victory?
+
+        SpringApplication.run(APIApplication.class, args);
 
     }
 
-    @Bean
-    CommandLineRunner init(StorageService storageService) {
-        return (args) -> {
-            storageService.init();
-        };
-    }
 }
