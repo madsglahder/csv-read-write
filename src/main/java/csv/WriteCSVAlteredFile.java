@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WriteCSVAltered {
+public class WriteCSVAlteredFile {
     public void writeAltered(List<CSVPerson> csvPeople, String fileName) throws IOException,
             CsvDataTypeMismatchException,
             CsvRequiredFieldEmptyException {
